@@ -12,7 +12,8 @@ class Book(Publisher):
         self.author=author
     def display(self):
         super().display()
-        print(f"title: {self.author}")
+        print(f"title: {self.title}")
+        print(f"author: {self.author}")
 class python(Book):
     def __init__(self,name,title,author,price,no_pages):
         super().__init__(name,title,author)
